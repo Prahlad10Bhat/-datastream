@@ -61,7 +61,7 @@ function update() {
   drawObstacles();
   drawPowerups();
   detectCollision();
-  packet.vy = Math.min(packet.vy + gravity, 10);
+  packet.vy += gravity;
   packet.y += packet.vy;
   
   frame++;
