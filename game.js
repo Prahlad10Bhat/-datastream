@@ -19,7 +19,7 @@ function drawPacket() {
 function createObstacles() {
   if (frame % 100 === 0) {
     let top = Math.random() * (canvas.height / 2.5);
-    let gap = 200;
+    let gap = 500;
     obstacles.push({ x: canvas.width, y: 0, w: 40, h: top });
     obstacles.push({ x: canvas.width, y: top + 150, w: 40, h: canvas.height });
   }
