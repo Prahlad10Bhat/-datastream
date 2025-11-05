@@ -29,7 +29,7 @@ function drawObstacles() {
   ctx.fillStyle = "#ff003c";
   obstacles.forEach(o => {
     ctx.fillRect(o.x, o.y, o.w, o.h);
-    o.x -= 4;
+    o.x -= 1;
   });
   obstacles = obstacles.filter(o => o.x + o.w > 0);
 }
@@ -42,7 +42,7 @@ function drawPowerups() {
     ctx.beginPath();
     ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
     ctx.fill();
-    p.x -= 1;
+    p.x -= 0;
   });
   powerups = powerups.filter(p => p.x > 0);
 }
