@@ -4,7 +4,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let packet = { x: 100, y: canvas.height / 2, r: 12, vy: 0 };
-let gravity = 0.09, jump = -3;
+let gravity = 0.4, jump = -9.5;
 let obstacles = [], powerups = [], frame = 0, score = 0, gameOver = false;
 
 function drawPacket() {
