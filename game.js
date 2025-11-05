@@ -42,7 +42,7 @@ function drawPowerups() {
     ctx.beginPath();
     ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
     ctx.fill();
-    p.x -= 4;
+    p.x -= 1;
   });
   powerups = powerups.filter(p => p.x > 0);
 }
